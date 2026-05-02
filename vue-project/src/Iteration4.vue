@@ -1,7 +1,7 @@
 <template>
 <div>
 
-    <div v-for="post in posts" :key="post.title">
+    <div v-for="post in posts" :key="post.id">
 
       <h2>{{ post.title }}</h2>
 
@@ -20,6 +20,7 @@ import { ref } from 'vue'
 const posts = ref([
 
   {
+    id: 1,
 
     title: "Post 1",
 
@@ -30,6 +31,7 @@ const posts = ref([
   },
 
   {
+    id: 2,
 
     title: "Post 2",
 
@@ -40,7 +42,7 @@ const posts = ref([
   },
 
   {
-
+    id: 3,
     title: "Post 3",
 
     description: "Beschreibung 3",
